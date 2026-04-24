@@ -16,7 +16,7 @@ public class ProductService {
     }
 
     public Product create(Product product) {
-        product.setName("Garbage"+"545645645");
+        // product.setName("Garbage"+"545645645"); // esto no pisa el nombre que viene del request?
         return repository.save(product);
     }
 
